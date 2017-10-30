@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p> Est ce que c'est la pause ?</p>
+
+<p id="demo"></p>
+
+<script>
+
+setTimeout(myFunction, 5 * 60 * 1000);
+
+//5 * 60 * 1000
+
+function myFunction() {
+    var d = new Date();
+    var now_h = d.getHours();
+    var now_m = d.getMinutes();
+    var pause_h = 10;
+    var pause_m = 30;
+    if (now_h == pause_h && now_m == pause_m) {
+    	alert("C'est la pause");
+    } else {
+    	alert("Il est "+ now_h+"h"+now_m+" la pause est prévue à "+pause_h+"h"+pause_m);
+    }
+}
+</script>
+
+</body>
+</html>
